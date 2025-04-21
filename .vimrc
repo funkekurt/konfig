@@ -1,48 +1,23 @@
 
 syntax on
-colorscheme ron 
 set number		    " Zeilennummern anzeigen
-" set relativenumber " Zeilennummer relativ
 set incsearch		  " Zeigt Suchergebnisse während des Suchens an
 set hlsearch		  " Suchergebnisse farbig anzeigen
-set autoindent
-
-set viminfo+=n		" Zum Erstellen von sessions
+set viminfo+=n		" Zum Erstelllen von sessions
 " set tags+=$HOME/RoNet/programmieren/Cpp	 " Ctags
 set nocompatible
 " set backup			" Erstellt eine ~ Backupdatei	
 set lbr						" line break
-
-" Tab Einstellungen
 set tw=80					" Zeilenlänge
 set tabstop=2
-" set list					" Zeigt Tab an
-set bg=dark
-set et ts=2 sw=2 ai
-
 set path+=**		" Finden in Subordner
 set wildmenu		" Zeigt bei Verwenden von find alle Dateien in einem Menü
 set showcmd			" Zeigt das eingegebene Kommando rechts unten an
 
-
-set ls=2				" Zeigt Dateinamen an
-set showmode		" Zeigt den Modus an (insert, replace usw.)
-
-" Rechtschreibprüfung
-" set spell
-" set spelllang=en,de
-
-" Return to last edit position when opening files
-autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal! g`\"" |
-    \ endif
-
-" ~/Skeleton *.sh
-autocmd BufNewFile *.sh 0r ~/skeletons/bash.sh
-autocmd BufNewFile *.py 0r ~/skeletons/python.py
+color desert
 
 cmap w!! w! sudo tee > /dev/null %	" Speichern von schreibgeschützten Dateien
+
 
 :hi mailHeader 		ctermfg=Gray
 :hi mailSubject 	ctermfg=Green
@@ -75,4 +50,3 @@ autocmd Filetype cpp :iabbrev ppp print("Start C++ ")<cr><cr><left><left><left>
 :ab rahmen <CR> #include <stdio.h><CR>#include <stdlib.h><CR><CR>void main()<CR>{<CR><CR><CR>}
 :ab shebang #!/usr/bin/env python3
 :iabbrev <expr> ddd strftime("%c")
-
