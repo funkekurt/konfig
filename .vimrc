@@ -41,9 +41,9 @@ autocmd Filetype c :iabbrev ppp printf("Start C ")<cr><cr><left><left><left>
 autocmd Filetype cpp :iabbrev ppp print("Start C++ ")<cr><cr><left><left><left>
 
 :ab SgD Sehr geehrte Damen und Herren,
-:ab MfG Mit freundlichen Grüßen<CR>Kurt Funke
+:ab MfG Mit freundlichen Grüßen<CR>Admin
 :ab snip ------------------------------------------------------
-:ab Programmkopf Author: Kurt Funke<CR>Programmname: <CR>Version: <CR>Datum: <CR>Beschreibung: <CR><CR><CR>
+:ab Programmkopf Author: Admin<CR>Programmname: <CR>Version: <CR>Datum: <CR>Beschreibung: <CR><CR><CR>
 :ab html_basic <html><CR><head><title>yyy</head></title><CR><body><CR><CR><CR></body><CR></html>
 :ab html_link <a href=" "> LINK </a> 
 :ab sft <C-R>=strftime("%Y-%m-%d %H:%M %Z")<cr>
