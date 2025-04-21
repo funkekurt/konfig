@@ -127,8 +127,6 @@ echo ""
 echo -e "*******************************************************************************\n\n"
 
 PS1="\n\j RoNet-System\n[\t] --> "
-export MYSQL_PS1="\nDatenbank --> "
-export PATH=$HOME/.cabal/bin:$PATH
 
 . funktionen.bib
 
